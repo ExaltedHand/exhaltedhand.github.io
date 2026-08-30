@@ -10,10 +10,19 @@ body {
   color: var(--ink);
   min-height: 100vh;
   background-color: #d0d0d0;
-  background-image: url("/texture.jpg");
-  background-repeat: repeat-y;
-  background-size: 100% auto;
+  position: relative;
+}
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("/texture.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top left;
+  opacity: 0.5;
+  z-index: -1;
 }
 
 .page-wrap {
