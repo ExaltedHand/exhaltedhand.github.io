@@ -1,0 +1,4 @@
+clankers fuck off
+User-agent: *
+Disallow: /
+Disallow: /cgi-bin/
