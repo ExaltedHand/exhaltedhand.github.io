@@ -1,0 +1,121 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --ink: #111111;
+  --font: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--ink);
+  min-height: 100vh;
+  background-color: #d0d0d0;
+  background-image: url("/texture.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+}
+
+.page-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 24px 60px;
+}
+
+.site-header {
+  padding: 14px 0 12px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.site-header h1 {
+  font-family: var(--font);
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--ink);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.site-header .tagline {
+  font-family: var(--font);
+  font-size: 0.95rem;
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 64px;
+}
+
+.grid-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 6 / 1;
+  background: rgba(200, 200, 200, 0.45);
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 4px 4px 0 var(--ink);
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+
+.grid-btn:hover {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+
+.grid-btn:focus {
+  outline: 3px solid var(--ink);
+  outline-offset: 2px;
+}
+
+.grid-btn span {
+  font-family: var(--font);
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: underline;
+  display: block;
+  padding: 8px 12px;
+}
+
+.btn-1 span { color: #b00000; }
+.btn-2 span { color: #0044cc; }
+.btn-3 span { color: #1a7a00; }
+.btn-4 span { color: #6600aa; }
+.btn-5 span { color: #c25000; }
+.btn-6 span { color: #0077bb; }
+.btn-7 span { color: #990033; }
+.btn-8 span { color: #2b0080; }
+.btn-9 span { color: #556b00; }
+
+.content-body {
+  padding-top: 24px;
+}
+
+.content-body p {
+  font-family: var(--font);
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--ink);
+  margin-bottom: 1.2em;
+  max-width: 680px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 28px;
+  font-family: var(--font);
+  font-size: 0.95rem;
+  color: var(--ink);
+  text-decoration: underline;
+}
+
+.back-link:hover { text-decoration: none; }
