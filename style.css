@@ -11,9 +11,9 @@ body {
   min-height: 100vh;
   background-color: #d0d0d0;
   background-image: url("/texture.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: 100% auto;
-  background-attachment: fixed;
+
 }
 
 .page-wrap {
@@ -48,7 +48,7 @@ body {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 64px;
+  gap: 48px;
 }
 
 .grid-btn {
@@ -56,7 +56,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  aspect-ratio: 6 / 1;
+  aspect-ratio: 4.4 / 1;
   background: rgba(200, 200, 200, 0.45);
   border: 1px solid var(--ink);
   border-radius: 0;
